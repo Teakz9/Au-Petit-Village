@@ -9,16 +9,18 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  constructor() {
-    const menuBurger = document.querySelector(".menu-burger")
-    const navLinks = document.querySelector(".nav-links")
+  constructor(){
+    document.addEventListener('DOMContentLoaded', () => {
+    const burger: HTMLElement | null = document.querySelector("#burger");
+    const nav: HTMLElement | null = document.querySelector(".nav");
 
-    if (menuBurger && navLinks){
-      menuBurger.addEventListener('click',()=>{
-      navLinks.classList.toggle('mobile-menu');
-    })
-    }
-    
+    if (burger && nav) {
+      burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    } 
+  })
+
   }
-  
 }
+  
