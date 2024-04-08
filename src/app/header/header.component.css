@@ -1,14 +1,20 @@
+@font-face{
+    font-family: 'COMFORTAA-REGULAR.TTF';
+    src: url(/src/assets/fonts/COMFORTAA-REGULAR.TTF) format('truetype');
+}
+
 .logoAPV{
     width: 100px;
     height: 100px;
+
 }
 
 nav{
-    background-color: #610303;
+    background-color: #f9d0a3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+
 }
 
 nav ul{
@@ -25,19 +31,26 @@ nav ul{
 .links{
     text-decoration: none;
     padding-right: 50px;
-    color: darkgoldenrod;
+    color: #151217;
+    font-family: 'COMFORTAA-REGULAR.TTF', sans-serif;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 430px){
 
     #burger::before{
         display: block;
         content: "\2630";
         font-size: 5vw;
+        margin-right: 10px;
+    }
+
+    .logoAPV{
+        margin-top: 10px;
     }
 
     .active #burger::before{
-        content: "\0058"
+        content: "\2715";
+        margin-right: 10px;
     }
 
     #burger{
@@ -46,7 +59,50 @@ nav ul{
 
     nav ul {
         position: fixed;
-        left: -100%;
+        left: -150%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        top: 8%;
+        background-color: #f9d0a3;
+        font-size: 4vw;
+    }
+
+    nav.active ul{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    #burger::before{
+        display: block;
+        content: "\2630";
+        font-size: 5vw;
+        margin-right: 10px;
+    }
+
+    .logoAPV{
+        margin-top: 10px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .active #burger::before{
+        content: "\2715";
+        margin-right: 10px;
+    }
+
+    #burger{
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        left: -150%;
         list-style: none;
         display: flex;
         justify-content: center;
@@ -54,10 +110,11 @@ nav ul{
         flex-direction: column;
         text-align: center;
         top: 10%;
+        background-color: #f9d0a3;
+        font-size: 3vw;
     }
 
     nav.active ul{
         left: 0;
     }
-
 }
