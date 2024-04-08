@@ -66,9 +66,9 @@ nav ul{
         width: 100%;
         flex-direction: column;
         text-align: center;
-        top: 8%;
+        top: 10%;
         background-color: #f9d0a3;
-        font-size: 4vw;
+        font-size: 1.8em;
     }
 
     nav.active ul{
@@ -111,10 +111,31 @@ nav ul{
         text-align: center;
         top: 10%;
         background-color: #f9d0a3;
-        font-size: 3vw;
+        font-size: 1.8em;
     }
 
     nav.active ul{
         left: 0;
+    }
+}
+
+@media screen and (min-width: 901px){
+
+    .logoAPV{
+        width: 120px;
+        height: 120px;
+        margin-top: 10px;
+    }
+
+    ul{
+        padding-right: 20px;
+    }
+
+    .links{
+        font-size: 1.3em;
+    }
+
+    .links:hover{
+      color: #fdd90b;
     }
 }
