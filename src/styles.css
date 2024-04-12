@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: 'COMFORTAA-REGULAR.TTF';
+    src: url(/src/assets/fonts/COMFORTAA-REGULAR.TTF) format('truetype');
+}
+
+@font-face{
+    font-family:'BUBBLENEUE';
+    src: url(/src/assets/fonts/BUBBLEBODDYNEUE-REGULAR\ TRIAL.TTF) format('truetype');
+}
+
 body{
     margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'BUBBLENEUE', sans-serif;
+}
+
+p{
+    font-family: 'COMFORTAA-REGULAR.TTF', sans-serif;
 }

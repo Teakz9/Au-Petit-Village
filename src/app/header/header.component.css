@@ -1,8 +1,3 @@
-@font-face{
-    font-family: 'COMFORTAA-REGULAR.TTF';
-    src: url(/src/assets/fonts/COMFORTAA-REGULAR.TTF) format('truetype');
-}
-
 .logoAPV{
     width: 100px;
     height: 100px;
@@ -35,7 +30,7 @@ nav ul{
     font-family: 'COMFORTAA-REGULAR.TTF', sans-serif;
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 500px){
 
     #burger::before{
         display: block;
