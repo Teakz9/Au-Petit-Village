@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SortByPricePipe } from '../sort-by-price.pipe';
+import { FilterByNamePipe } from '../filter-by-name.pipe';
+import { FormsModule } from '@angular/forms';
 
 interface Product {
   id: number;
@@ -13,7 +14,7 @@ interface Product {
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule, SortByPricePipe],
+  imports: [CommonModule, SortByPricePipe, FilterByNamePipe, FormsModule],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'
 })
@@ -33,6 +34,7 @@ export class ProductsComponent {
   ];
 
   ascending: boolean = true;
+  searchTerm: string = '';
 
   toggleSort() {
     this.ascending = !this.ascending;
