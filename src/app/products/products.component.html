@@ -1,22 +1,22 @@
 <h1>NOS PRODUITS</h1>
 
+    <span class="sortLine">
+        <p class="sortOrder">Ordre croissant / décroissant :</p>
+        <button (click)="toggleSort()" class="sortBtn">Changer le tri</button>
+    </span>
+
+    <span class="filterLine">
+        <p class="filterName">Rechercher par nom :</p>
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Astérix" class="filterCase">
+    </span>
+
     <div class="products">
-
-        <span class="sortLine">
-            <p class="sortOrder">Ordre croissant / décroissant :</p>
-            <button (click)="toggleSort()" class="sortBtn">Changer le tri</button>
-        </span>
-
-        <span>
-            <p>Rechercher par nom :</p>
-            <input type="text" [(ngModel)]="searchTerm" placeholder="Astérix">
-        </span>
 
         <div class="productItem" *ngFor="let product of products | sortByPrice: ascending | filterByName: searchTerm">
             <img [src]="product.imageUrl" alt="Image d'une petite figurine du personnage Astérix" class="productImg">
             <h2 class="productName">{{product.name}}</h2>
             <p class="productPrice">{{product.price | currency:'EUR' : 'symbol':'1.2-2'}}</p>
+            <button class="addToCart" (click)="goToProductDetail(product.id)">Plus de détails</button>
         </div>
 
-        
     </div>

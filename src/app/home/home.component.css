@@ -3,3 +3,13 @@
     src: url(/src/assets/fonts/BUBBLENEUE.woff) format('woff');
 }
 
+p{
+    text-align: center;
+}
+
+@media screen and (max-width: 430px) {
+    p{
+        margin: 10px 10px;
+    }
+}
+

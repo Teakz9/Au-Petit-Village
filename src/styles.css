@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face{
     font-family: 'COMFORTAA-REGULAR.TTF';
-    src: url(/src/assets/fonts/COMFORTAA-REGULAR.TTF) format('truetype');
+    src: url(/assets/fonts/COMFORTAA-REGULAR.TTF) format('truetype');
 }
 
 @font-face{
     font-family:'BUBBLENEUE';
-    src: url(/src/assets/fonts/BUBBLEBODDYNEUE-REGULAR\ TRIAL.TTF) format('truetype');
+    src: url(/assets/fonts/BUBBLEBODDYNEUE-REGULAR\ TRIAL.TTF) format('truetype');
 }
 
 body{

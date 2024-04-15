@@ -5,6 +5,6 @@ import { ProposComponent } from './propos/propos.component';
 
 export const routes: Routes = [
     {path: "", component: HomeComponent},
-    {path: "produits", component: ProduitsComponent},
+    {path: "produits/:id", component: ProduitsComponent},
     {path: "propos", component: ProposComponent}
 ];

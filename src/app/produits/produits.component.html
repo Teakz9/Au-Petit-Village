@@ -1,3 +1,10 @@
 <app-header></app-header>
 
+    <div *ngIf="product">
+        <div class="productItem">
+            <img [src]="product.imageUrl" alt="Image d'une petite figurine du personnage Astérix" class="productImg">
+            <h2 class="productName">{{product.name}}</h2>
+            <p class="productPrice">{{product.price | currency:'EUR' : 'symbol':'1.2-2'}}</p>
+        </div>
+      
 <app-footer></app-footer>
