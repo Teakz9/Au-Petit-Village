@@ -13,7 +13,7 @@
     <div class="products">
 
         <div class="productItem" *ngFor="let product of products | sortByPrice: ascending | filterByName: searchTerm">
-            <img [src]="product.imageUrl" alt="Image d'une petite figurine du personnage Astérix" class="productImg">
+            <img [src]="product.imageUrl" class="productImg">
             <h2 class="productName">{{product.name}}</h2>
             <p class="productPrice">{{product.price | currency:'EUR' : 'symbol':'1.2-2'}}</p>
             <button class="addToCart" (click)="goToProductDetail(product.id)">Plus de détails</button>
